@@ -1,0 +1,199 @@
+# Age Renew by Kalya - Configuración Jekyll
+# Tema: Minimal Mistakes
+
+# Configuración del sitio
+title: "Age Renew by Kalya"
+title_separator: "|"
+subtitle: "Tu fuente de bienestar y anti-envejecimiento"
+description: "Descubre los secretos del bienestar y anti-envejecimiento con Age Renew by Kalya. Recursos, academias, ebooks, suplementos y consejos expertos para una vida más saludable y longeva."
+author: "Kalya"
+keywords: "anti-envejecimiento, bienestar, salud, longevidad, suplementos, estilo de vida"
+locale: "es"
+url: "https://tu-usuario.github.io" # Cambiar por tu URL de GitHub Pages
+baseurl: "/age-renew-kalya" # Cambiar por el nombre de tu repositorio
+repository: "tu-usuario/age-renew-kalya" # Cambiar por tu repositorio
+
+# Configuración del tema remoto
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+# Configuración de GitHub Pages
+github_metadata: true
+enable_coderay: false
+
+# Configuración de timezone
+timezone: "Europe/Madrid"
+
+# Configuración de navegación principal
+main:
+  - title: "Inicio"
+    url: /
+  - title: "Academia"
+    url: /academia/
+  - title: "Ebooks"
+    url: /ebooks/
+  - title: "Suplementos"
+    url: /suplementos/
+  - title: "FAQ"
+    url: /faq/
+  - title: "Blog"
+    url: /blog/
+  - title: "Contacto"
+    url: /contacto/
+
+# Configuración del sitio para mejor apariencia
+site:
+  logo: "/assets/images/logo.svg" # Crear este logo
+  masthead_title: "Age Renew by Kalya"
+  words_per_minute: 200
+
+# Configuración de colores de marca
+brand_colors:
+  primary: "#D7A4B7" # Smoke Rose
+  secondary: "#6E8072" # Green Smoke
+  background: "#FFFFFF"
+  text: "#333333"
+
+# Configuración del tema
+minimal_mistakes_skin: "default"
+
+# Configuración de página de inicio
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # All other pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+
+# Plugins Jekyll (compatibles con GitHub Pages)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+# Configuración de paginación
+paginate: 5
+paginate_path: /page:num/
+
+# Configuración de markdown con soporte para Mermaid
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  syntax_highlighter: rouge
+
+# Configuración de Highlighter
+highlighter: rouge
+
+# Configuración de redes sociales (para el footer)
+footer:
+  links:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/agerenew_kalya"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://facebook.com/age.renew.kalya"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://youtube.com/agerenewkalya"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/rosa-og-kalya"
+
+# Configuración de breadcrumbs
+breadcrumbs: true
+
+# Configuración de fecha
+date_format: "%B %d, %Y"
+
+# Configuración de comentarios
+comments:
+  provider: false
+
+# Configuración de Google Analytics (opcional)
+# analytics:
+#   provider: "google-gtag"
+#   google:
+#     tracking_id: "TU-TRACKING-ID"
+
+# Excluir archivos del procesamiento
+exclude:
+  - "*.gemspec"
+  - "*.gem"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "vendor/bundle/"
+  - "vendor/cache/"
+  - "vendor/gems/"
+  - "vendor/ruby/"
+  - ".bundle/"
+  - ".jekyll-cache/"
+  - ".jekyll-assets-cache/"
+  - ".sass-cache/"
+  - "node_modules/"
+  - "bower_components/"
+  - "tmp/"
+  - "temp/"
+
+# Configuración de archivos de include
+include:
+  - "_pages"
+
+# Configuración de encoding
+encoding: "UTF-8"
+
+# Configuración de SEO
+lang: es_ES
+
+# Configuración de autor global
+author:
+  name: "Equipo Age Renew by Kalya"
+  avatar: "/assets/images/team-avatar.jpg"
+  bio: "Expertos en longevidad consciente y bienestar integral"
+  location: "España/Panamá"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://agerenewkalya.com"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/agerenew_kalya"
+    - label: "WhatsApp"
+      icon: "fab fa-fw fa-whatsapp"
+      url: "https://wa.me/50765869138"
+
+# Soporte para Mermaid y elementos visuales
+head_scripts:
+  - "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"
+
+after_footer_scripts:
+  - "/assets/js/custom.js"

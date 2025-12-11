@@ -1,0 +1,502 @@
+---
+layout: single
+title: "Contacto - Age Renew by Kalya"
+permalink: /contacto/
+author_profile: false
+sidebar:
+  nav: "main"
+---
+
+<style>
+  .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .contact-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 40px 0;
+  }
+  
+  .contact-header h1 {
+    color: #D7A4B7;
+    font-size: 3em;
+    margin-bottom: 15px;
+  }
+  
+  .contact-header .subtitle {
+    color: #6E8072;
+    font-size: 1.3em;
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+  
+  .contact-form {
+    background: linear-gradient(135deg, rgba(215, 164, 183, 0.1), rgba(110, 128, 114, 0.1));
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid rgba(215, 164, 183, 0.3);
+  }
+  
+  .contact-form h2 {
+    color: #6E8072;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    color: #6E8072;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgba(215, 164, 183, 0.3);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #D7A4B7;
+    box-shadow: 0 0 10px rgba(215, 164, 183, 0.3);
+  }
+  
+  .form-group textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  @media (max-width: 480px) {
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .btn-submit {
+    background: linear-gradient(135deg, #D7A4B7, #6E8072);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  
+  .btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(215, 164, 183, 0.4);
+  }
+  
+  .contact-info {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  
+  .contact-info h2 {
+    color: #6E8072;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+  }
+  
+  .contact-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(215, 164, 183, 0.2);
+  }
+  
+  .contact-method:last-child {
+    border-bottom: none;
+  }
+  
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #D7A4B7, #6E8072);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .contact-details h3 {
+    color: #6E8072;
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+  }
+  
+  .contact-details p {
+    color: #666;
+    margin: 0;
+    line-height: 1.4;
+  }
+  
+  .contact-details a {
+    color: #D7A4B7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-details a:hover {
+    color: #6E8072;
+  }
+  
+  .hours-section {
+    background: rgba(215, 164, 183, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+  }
+  
+  .hours-section h3 {
+    color: #6E8072;
+    margin-bottom: 15px;
+  }
+  
+  .hours-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .hours-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    color: #333;
+  }
+  
+  .specialties {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+  }
+  
+  .specialty-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .specialty-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .specialty-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #D7A4B7, #6E8072);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .specialty-card h3 {
+    color: #6E8072;
+    margin-bottom: 15px;
+  }
+  
+  .specialty-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .emergency-notice {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px 0;
+    text-align: center;
+  }
+  
+  .emergency-notice h3 {
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .emergency-notice p {
+    margin: 0;
+    opacity: 0.9;
+  }
+</style>
+
+<div class="contact-container">
+  <div class="contact-header">
+    <h1>Contáctanos</h1>
+    <p class="subtitle">Estamos aquí para acompañarte en tu journey hacia una vida más saludable y plena. Nuestro equipo de expertos está listo para ayudarte.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-form">
+      <h2>Envíanos un Mensaje</h2>
+      <form id="contactForm" action="#" method="post">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">Nombre *</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Apellidos *</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="subject">Asunto *</label>
+          <select id="subject" name="subject" required>
+            <option value="">Selecciona un tema...</option>
+            <option value="consulta-general">Consulta General</option>
+            <option value="suplementos">Información sobre Suplementos</option>
+            <option value="academia">Academia de Longevidad</option>
+            <option value="pedidos">Pedidos y Envíos</option>
+            <option value="soporte-tecnico">Soporte Técnico</option>
+            <option value="colaboraciones">Colaboraciones</option>
+            <option value="prensa">Prensa y Medios</option>
+            <option value="otros">Otros</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Mensaje *</label>
+          <textarea id="message" name="message" placeholder="Cuéntanos cómo podemos ayudarte..." required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label>
+            <input type="checkbox" name="newsletter" value="yes">
+            Sí, quiero recibir información sobre nuevos productos, ofertas especiales y contenido educativo.
+          </label>
+        </div>
+        
+        <div class="form-group">
+          <label>
+            <input type="checkbox" name="privacy" required>
+            He leído y acepto la <a href="/privacidad/" target="_blank">Política de Privacidad</a> *
+          </label>
+        </div>
+        
+        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h2>Información de Contacto</h2>
+      
+      <div class="contact-method">
+        <div class="contact-icon">📧</div>
+        <div class="contact-details">
+          <h3>Email Principal</h3>
+          <p><a href="mailto:hola@agerenewbykalya.com">hola@agerenewbykalya.com</a></p>
+        </div>
+      </div>
+      
+      <div class="contact-method">
+        <div class="contact-icon">📞</div>
+        <div class="contact-details">
+          <h3>Teléfono</h3>
+          <p><a href="tel:+34900123456">+34 900 123 456</a><br>
+          <small>Llamadas gratuitas desde España</small></p>
+        </div>
+      </div>
+      
+      <div class="contact-method">
+        <div class="contact-icon">💬</div>
+        <div class="contact-details">
+          <h3>WhatsApp Business</h3>
+          <p><a href="https://wa.me/34600123456">+34 600 123 456</a><br>
+          <small>Respuesta en menos de 1 hora</small></p>
+        </div>
+      </div>
+      
+      <div class="contact-method">
+        <div class="contact-icon">📍</div>
+        <div class="contact-details">
+          <h3>Dirección</h3>
+          <p>Calle de la Innovación 123<br>
+          28045 Madrid, España</p>
+        </div>
+      </div>
+      
+      <div class="hours-section">
+        <h3>Horarios de Atención</h3>
+        <ul class="hours-list">
+          <li><span>Lunes - Viernes:</span> <span>9:00 - 19:00</span></li>
+          <li><span>Sábados:</span> <span>10:00 - 14:00</span></li>
+          <li><span>Domingos:</span> <span>Cerrado</span></li>
+          <li><span>Email:</span> <span>24/7</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="emergency-notice">
+    <h3>⚠️ Importante</h3>
+    <p>En caso de emergencia médica, contacta inmediatamente con los servicios de emergencia (112). Age Renew by Kalya no proporciona servicios médicos de urgencia.</p>
+  </div>
+
+  <div class="specialties">
+    <div class="specialty-card">
+      <div class="specialty-icon">🧪</div>
+      <h3>Consultas sobre Suplementos</h3>
+      <p>Nuestros nutricionistas especializados te ayudarán a encontrar los suplementos perfectos para tus objetivos de salud y bienestar.</p>
+    </div>
+    
+    <div class="specialty-card">
+      <div class="specialty-icon">🎓</div>
+      <h3>Academia de Longevidad</h3>
+      <p>Soporte técnico y académico para aprovechar al máximo nuestros cursos y recursos educativos sobre longevidad saludable.</p>
+    </div>
+    
+    <div class="specialty-card">
+      <div class="specialty-icon">🤝</div>
+      <h3>Colaboraciones</h3>
+      <p>Trabajamos con profesionales de la salud, influencers y organizaciones que comparten nuestra visión del bienestar integral.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // Basic form validation
+  const requiredFields = this.querySelectorAll('[required]');
+  let isValid = true;
+  
+  requiredFields.forEach(field => {
+    if (!field.value.trim()) {
+      isValid = false;
+      field.style.borderColor = '#ff6b6b';
+    } else {
+      field.style.borderColor = 'rgba(215, 164, 183, 0.3)';
+    }
+  });
+  
+  if (!isValid) {
+    alert('Por favor, completa todos los campos obligatorios.');
+    return;
+  }
+  
+  // Email validation
+  const email = document.getElementById('email').value;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Por favor, introduce un email válido.');
+    document.getElementById('email').style.borderColor = '#ff6b6b';
+    return;
+  }
+  
+  // Privacy checkbox validation
+  const privacyCheckbox = document.querySelector('input[name="privacy"]');
+  if (!privacyCheckbox.checked) {
+    alert('Debes aceptar la Política de Privacidad para continuar.');
+    return;
+  }
+  
+  // Simulate form submission
+  const submitBtn = this.querySelector('.btn-submit');
+  const originalText = submitBtn.textContent;
+  submitBtn.textContent = 'Enviando...';
+  submitBtn.disabled = true;
+  
+  setTimeout(() => {
+    alert('¡Gracias por contactarnos! Hemos recibido tu mensaje y te responderemos en las próximas 24 horas.');
+    this.reset();
+    submitBtn.textContent = originalText;
+    submitBtn.disabled = false;
+  }, 2000);
+});
+
+// Dynamic subject handling
+document.getElementById('subject').addEventListener('change', function() {
+  const messageTextarea = document.getElementById('message');
+  const selectedValue = this.value;
+  
+  let placeholder = 'Cuéntanos cómo podemos ayudarte...';
+  
+  switch(selectedValue) {
+    case 'suplementos':
+      placeholder = 'Cuéntanos sobre tus objetivos de salud, condiciones actuales y qué tipo de suplementos te interesan...';
+      break;
+    case 'academia':
+      placeholder = 'Describe qué curso o contenido te interesa, tu nivel de experiencia y tus objetivos de aprendizaje...';
+      break;
+    case 'pedidos':
+      placeholder = 'Incluye tu número de pedido si ya realizaste una compra, o describe qué producto te interesa...';
+      break;
+    case 'soporte-tecnico':
+      placeholder = 'Describe el problema técnico que experimentas, qué dispositivo usas y cuándo ocurre...';
+      break;
+    case 'colaboraciones':
+      placeholder = 'Cuéntanos sobre tu propuesta de colaboración, tu audiencia y cómo podríamos trabajar juntos...';
+      break;
+  }
+  
+  messageTextarea.placeholder = placeholder;
+});
+</script>

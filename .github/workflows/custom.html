@@ -1,0 +1,106 @@
+<!-- Age Renew by Kalya - Custom head scripts -->
+
+<!-- Mermaid.js for diagrams -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+
+<!-- Custom CSS variables -->
+<style>
+:root {
+  --primary-color: #D7A4B7;
+  --secondary-color: #6E8072;
+  --background-color: #FFFFFF;
+  --text-color: #333333;
+}
+
+/* Ensure mermaid diagrams are visible */
+.mermaid {
+  text-align: center;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Custom scrollbar for better UX */
+.mermaid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.mermaid::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.mermaid::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+.mermaid::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mermaid {
+    padding: 15px;
+    margin: 20px auto;
+  }
+}
+</style>
+
+<!-- Initialize Mermaid on page load -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof mermaid !== 'undefined') {
+    mermaid.initialize({ 
+      startOnLoad: true,
+      theme: 'default',
+      themeVariables: {
+        primaryColor: '#D7A4B7',
+        primaryTextColor: '#333',
+        primaryBorderColor: '#6E8072',
+        lineColor: '#6E8072',
+        secondaryColor: '#f8f9fa',
+        tertiaryColor: '#fff',
+        background: '#ffffff',
+        tertiaryTextColor: '#333',
+        fontFamily: 'Georgia, serif',
+        fontSize: '16px'
+      },
+      flowchart: {
+        useMaxWidth: true,
+        htmlLabels: true,
+        curve: 'basis'
+      },
+      securityLevel: 'loose'
+    });
+  }
+});
+</script>
+
+<!-- Preload critical resources -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
+<!-- Custom meta tags for better SEO -->
+<meta name="robots" content="index, follow">
+<meta name="language" content="Spanish">
+<meta name="author" content="Age Renew by Kalya">
+<meta name="copyright" content="Age Renew by Kalya">
+
+<!-- Open Graph tags for social media -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Age Renew by Kalya">
+<meta property="og:locale" content="es_ES">
+
+<!-- Twitter Card tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@agerenew_kalya">
+
+<!-- Theme color for mobile browsers -->
+<meta name="theme-color" content="#D7A4B7">
+<meta name="msapplication-TileColor" content="#D7A4B7">

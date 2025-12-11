@@ -1,0 +1,322 @@
+---
+layout: single
+title: "Preguntas Frecuentes - Age Renew by Kalya"
+permalink: /faq/
+author_profile: false
+sidebar:
+  nav: "main"
+---
+
+<style>
+  .faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .faq-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .faq-header h1 {
+    color: #D7A4B7;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .faq-header .subtitle {
+    color: #6E8072;
+    font-size: 1.2em;
+    font-style: italic;
+  }
+  
+  .faq-section {
+    margin-bottom: 30px;
+  }
+  
+  .faq-item {
+    background: linear-gradient(135deg, rgba(215, 164, 183, 0.1), rgba(110, 128, 114, 0.1));
+    border-left: 4px solid #D7A4B7;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .faq-question {
+    background: rgba(215, 164, 183, 0.2);
+    padding: 20px;
+    margin: 0;
+    cursor: pointer;
+    font-weight: 600;
+    color: #6E8072;
+    border: none;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+  }
+  
+  .faq-question:hover {
+    background: rgba(215, 164, 183, 0.3);
+  }
+  
+  .faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+  
+  .faq-answer.active {
+    padding: 20px;
+    max-height: 500px;
+  }
+  
+  .faq-answer p {
+    color: #333;
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+  }
+  
+  .faq-answer ul {
+    color: #333;
+    padding-left: 20px;
+  }
+  
+  .faq-arrow {
+    font-size: 1.2em;
+    color: #6E8072;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-arrow.active {
+    transform: rotate(180deg);
+  }
+  
+  .cta-section {
+    background: linear-gradient(135deg, #D7A4B7, #6E8072);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .cta-section h2 {
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  .cta-section p {
+    color: white;
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  
+  .btn-contact {
+    display: inline-block;
+    background: white;
+    color: #6E8072;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-contact:hover {
+    background: #f8f8f8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+</style>
+
+<div class="faq-container">
+  <div class="faq-header">
+    <h1>Preguntas Frecuentes</h1>
+    <p class="subtitle">Resolvemos todas tus dudas sobre Age Renew by Kalya</p>
+  </div>
+
+  <div class="faq-section">
+    
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        ¿Qué es Age Renew by Kalya?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>Age Renew by Kalya es una plataforma integral de salud y bienestar que combina suplementación científica, educación nutricional y acompañamiento personalizado para ayudarte a lograr tu mejor versión a cualquier edad.</p>
+        <p>Nuestro enfoque se basa en los últimos avances en ciencia nutricional y está respaldado por profesionales de la salud especializados en longevidad y bienestar.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        ¿Los suplementos son seguros?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>Todos nuestros suplementos cumplen con los más altos estándares de calidad y seguridad:</p>
+        <ul>
+          <li>Fabricados en instalaciones certificadas GMP (Good Manufacturing Practices)</li>
+          <li>Ingredientes de grado farmacéutico</li>
+          <li>Pruebas de terceros para pureza y potencia</li>
+          <li>Libres de contaminantes y metales pesados</li>
+          <li>Formulaciones respaldadas por investigación científica</li>
+        </ul>
+        <p>Sin embargo, siempre recomendamos consultar con un profesional de la salud antes de iniciar cualquier régimen de suplementación.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        ¿Cómo sé qué suplementos necesito?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>Ofrecemos varias opciones para determinar tus necesidades específicas:</p>
+        <ul>
+          <li><strong>Cuestionario de evaluación gratuito:</strong> Un análisis inicial de tu estilo de vida y objetivos</li>
+          <li><strong>Consulta con nuestros especialistas:</strong> Revisión personalizada de tu caso</li>
+          <li><strong>Análisis de laboratorio:</strong> Pruebas específicas para identificar deficiencias nutricionales</li>
+          <li><strong>Seguimiento continuo:</strong> Ajustes basados en tu progreso y respuesta</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        ¿Cuándo veré resultados?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>Los tiempos de respuesta varían según varios factores:</p>
+        <ul>
+          <li><strong>Energía y vitalidad:</strong> 2-4 semanas</li>
+          <li><strong>Mejoras en el sueño:</strong> 1-3 semanas</li>
+          <li><strong>Cambios en la piel:</strong> 4-8 semanas</li>
+          <li><strong>Optimización hormonal:</strong> 2-3 meses</li>
+          <li><strong>Cambios metabólicos:</strong> 3-6 meses</li>
+        </ul>
+        <p>La consistencia y adherencia al protocolo son factores clave para obtener los mejores resultados.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        ¿Puedo tomar los suplementos si estoy tomando medicamentos?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>Es fundamental consultar con tu médico antes de combinar suplementos con medicamentos. Algunos puntos importantes:</p>
+        <ul>
+          <li>Ciertos suplementos pueden interactuar con medicamentos</li>
+          <li>El timing de la toma puede ser importante</li>
+          <li>Las dosis pueden necesitar ajustes</li>
+          <li>Nuestro equipo puede coordinar con tu médico para un plan seguro</li>
+        </ul>
+        <p>Siempre prioriza la comunicación con todos tus proveedores de salud.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        ¿Ofrecen garantía en sus productos?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>Sí, ofrecemos una garantía de satisfacción de 60 días:</p>
+        <ul>
+          <li>Si no estás completamente satisfecho, puedes devolver el producto</li>
+          <li>Reembolso completo del precio del producto</li>
+          <li>Solo cubre productos sin abrir (por razones de seguridad)</li>
+          <li>El envío de retorno es responsabilidad del cliente</li>
+        </ul>
+        <p>Nuestro objetivo es tu satisfacción y bienestar a largo plazo.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        ¿Cómo funciona la Academia de Longevidad?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>La Academia de Longevidad es nuestra plataforma educativa que incluye:</p>
+        <ul>
+          <li><strong>Cursos estructurados:</strong> Módulos paso a paso sobre nutrición, ejercicio y bienestar</li>
+          <li><strong>Webinars en vivo:</strong> Sesiones interactivas con expertos</li>
+          <li><strong>Biblioteca de recursos:</strong> Artículos, videos y herramientas prácticas</li>
+          <li><strong>Comunidad privada:</strong> Conecta con otros miembros en su journey de bienestar</li>
+          <li><strong>Certificaciones:</strong> Completa cursos y obtén reconocimiento</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        ¿Qué métodos de pago aceptan?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>Aceptamos múltiples formas de pago para tu conveniencia:</p>
+        <ul>
+          <li>Tarjetas de crédito (Visa, MasterCard, American Express)</li>
+          <li>Tarjetas de débito</li>
+          <li>PayPal</li>
+          <li>Transferencias bancarias</li>
+          <li>Planes de pago flexibles para programas largos</li>
+        </ul>
+        <p>Todos los pagos son procesados de forma segura con encriptación SSL.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        ¿Realizan envíos internacionales?
+        <span class="faq-arrow">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>Actualmente realizamos envíos a:</p>
+        <ul>
+          <li><strong>España:</strong> Envío gratuito en pedidos superiores a 50€</li>
+          <li><strong>Unión Europea:</strong> Envío disponible (consultar tarifas)</li>
+          <li><strong>Estados Unidos:</strong> Envío disponible con partners locales</li>
+          <li><strong>Otros países:</strong> Contacta con nosotros para verificar disponibilidad</li>
+        </ul>
+        <p>Los tiempos de entrega varían según la ubicación y pueden verse afectados por regulaciones locales de suplementos.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cta-section">
+    <h2>¿Tienes más preguntas?</h2>
+    <p>Nuestro equipo de especialistas está aquí para ayudarte en tu journey de bienestar</p>
+    <a href="/contacto/" class="btn-contact">Contáctanos</a>
+  </div>
+</div>
+
+<script>
+function toggleFAQ(element) {
+  const answer = element.nextElementSibling;
+  const arrow = element.querySelector('.faq-arrow');
+  
+  // Close all other FAQs
+  const allAnswers = document.querySelectorAll('.faq-answer');
+  const allArrows = document.querySelectorAll('.faq-arrow');
+  
+  allAnswers.forEach((ans, index) => {
+    if (ans !== answer) {
+      ans.classList.remove('active');
+      allArrows[index].classList.remove('active');
+    }
+  });
+  
+  // Toggle current FAQ
+  answer.classList.toggle('active');
+  arrow.classList.toggle('active');
+}
+</script>
